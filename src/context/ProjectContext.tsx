@@ -23,9 +23,14 @@ const initialProjects: Project[] = [
     coverImage: "/lovable-uploads/bc3af0e5-7065-480f-a341-ecc62aab626f.png",
     images: [
       "/lovable-uploads/bc3af0e5-7065-480f-a341-ecc62aab626f.png",
+      "https://i.imgur.com/RCxEyFH.jpg",
+      "https://i.imgur.com/Wn3S86A.jpg",
+      "https://i.imgur.com/V0ZXwQd.jpg",
+      "https://i.imgur.com/tTEeC6n.jpg",
+      "https://i.imgur.com/3mwMv72.jpg"
     ],
     technologies: ["CAD Design", "Prototyping", "3D Printing", "Laser Cutting", "Material Analysis", "Mechanical Analysis", "Machining"],
-    date: "2023",
+    date: "2025",
     clientName: "U.S. Military"
   },
   {
