@@ -22,12 +22,13 @@ const initialProjects: Project[] = [
     description: "Led the development of a passive transportation system for U.S. military heavy weaponry that increased mobility and deployment efficiency. The system incorporated advanced materials and mechanical design principles to ensure durability and reliability in various operational environments.",
     coverImage: "/lovable-uploads/bc3af0e5-7065-480f-a341-ecc62aab626f.png",
     images: [
-      "/lovable-uploads/bc3af0e5-7065-480f-a341-ecc62aab626f.png",
-      "https://i.imgur.com/RCxEyFH.jpg",
-      "https://i.imgur.com/Wn3S86A.jpg",
-      "https://i.imgur.com/V0ZXwQd.jpg",
-      "https://i.imgur.com/tTEeC6n.jpg",
-      "https://i.imgur.com/3mwMv72.jpg"
+      "/lovable-uploads/3a17bb76-cb4e-4b52-9e02-22e3b4817401.png",
+      "/lovable-uploads/a0f0271f-1694-487d-9300-ee6e65f61572.png",
+      "/lovable-uploads/b4648942-a215-499d-96ee-d0cf8ed2eb9e.png",
+      "/lovable-uploads/2e9ca5ae-fab6-489e-8948-742bf740ecd3.png",
+      "/lovable-uploads/9782bba2-37e2-42e4-b5da-90921161fd7c.png",
+      "/lovable-uploads/f89b9b23-f31f-48f6-9c71-c74a2f1dca06.png",
+      "/lovable-uploads/2d3c3c35-fc42-4a33-b75b-a4d532816ecd.png"
     ],
     technologies: ["CAD Design", "Prototyping", "3D Printing", "Laser Cutting", "Material Analysis", "Mechanical Analysis", "Machining"],
     date: "2025",
