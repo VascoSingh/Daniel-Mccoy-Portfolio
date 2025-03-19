@@ -12,7 +12,7 @@ export default function Index() {
       <Navbar />
       <Hero />
       <Biography />
-      <ProjectGrid />
+      <ProjectGrid featuredProjectId="1" />
       <Contact />
       <Footer />
     </div>

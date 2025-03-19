@@ -17,6 +17,19 @@ export type Project = {
 const initialProjects: Project[] = [
   {
     id: "1",
+    title: "Heavy Weapons Transportation System",
+    shortDescription: "Designed and manufactured a passive transportation system for U.S. military heavy weaponry.",
+    description: "Led the development of a passive transportation system for U.S. military heavy weaponry that increased mobility and deployment efficiency. The system incorporated advanced materials and mechanical design principles to ensure durability and reliability in various operational environments.",
+    coverImage: "/lovable-uploads/bc3af0e5-7065-480f-a341-ecc62aab626f.png",
+    images: [
+      "/lovable-uploads/bc3af0e5-7065-480f-a341-ecc62aab626f.png",
+    ],
+    technologies: ["CAD Design", "Prototyping", "3D Printing", "Laser Cutting", "Material Analysis", "Mechanical Analysis", "Machining"],
+    date: "2023",
+    clientName: "U.S. Military"
+  },
+  {
+    id: "2",
     title: "Automated Manufacturing System",
     shortDescription: "Designed and implemented an automated manufacturing system for precision components.",
     description: "Led the development of a fully automated manufacturing system that increased production efficiency by 45%. The system incorporated advanced robotics, computer vision, and machine learning algorithms to identify and correct manufacturing defects in real-time.",
@@ -31,7 +44,7 @@ const initialProjects: Project[] = [
     clientName: "TechManufacturing Inc."
   },
   {
-    id: "2",
+    id: "3",
     title: "Sustainable Energy Conversion System",
     shortDescription: "Developed a high-efficiency energy conversion system for sustainable power generation.",
     description: "Engineered an innovative energy conversion system that captures and converts waste heat into usable electricity. The system achieves 38% efficiency, significantly higher than industry standards, and has been implemented in three manufacturing facilities.",
@@ -44,7 +57,7 @@ const initialProjects: Project[] = [
     date: "2022"
   },
   {
-    id: "3",
+    id: "4",
     title: "Advanced Prosthetic Limb",
     shortDescription: "Created a lightweight, durable prosthetic limb with enhanced mobility and comfort.",
     description: "Designed and prototyped a next-generation prosthetic limb using composite materials and additive manufacturing techniques. The design reduced weight by 30% while increasing strength and durability, and incorporated advanced sensors for improved user control and feedback.",
@@ -57,7 +70,7 @@ const initialProjects: Project[] = [
     date: "2022-2023"
   },
   {
-    id: "4",
+    id: "5",
     title: "Automated HVAC Optimization System",
     shortDescription: "Developed an intelligent HVAC system that reduces energy consumption by 32%.",
     description: "Created an AI-driven HVAC optimization system that continuously monitors environmental conditions and adjusts settings to maximize comfort while minimizing energy usage. The system has been implemented in commercial buildings, resulting in significant cost savings and reduced carbon footprint.",
