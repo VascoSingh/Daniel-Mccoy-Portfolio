@@ -1,4 +1,3 @@
-
 import { useParams, useNavigate } from "react-router-dom";
 import { useProjects } from "@/context/ProjectContext";
 import { Navbar } from "@/components/Navbar";
@@ -28,8 +27,8 @@ export default function ProjectDetail() {
     return null;
   }
 
-  // Image descriptions for project 1
-  const imageDescriptions = id === "1" ? [
+  // Use project's imageDescriptions if available, otherwise use project 1 descriptions or empty array
+  const imageDescriptions = project.imageDescriptions || (id === "1" ? [
     "Prototype #1: This is the first iteration of our design where the focus was to test the wheel system, inspired by the drive system of a Mars Rover (Rocker-Bogie).",
     "Prototype #2: This is a continuation of our first prototype where we changed the bogie to have no angle (180°) to allow 360° rotation and still roll.",
     "Prototype #3: This is an upgraded version of our 2nd prototype where we incorporated larger wheels, a netting system for a payload, and a foldable handle to move the cart. The focus of this prototype was to demonstrate the wheel system over larger obstacles.",
@@ -37,7 +36,7 @@ export default function ProjectDetail() {
     "Prototype #4: This is our manufactured prototype where the frame is made out of 6061 T6 Aluminum, providing enough strength to carry 200 lbs.",
     "Prototype #5: This prototype is nearing our end product where it labels all of the components we've integrated.",
     "CAD Model of Final Product: This CAD model shows all the updates we want to incorporate into our final design and allowed us to conduct an FEA test to ensure correct material selection."
-  ] : [];
+  ] : []);
   
   return (
     <>

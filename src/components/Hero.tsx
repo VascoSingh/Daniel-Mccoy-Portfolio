@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { RevealAnimation } from "@/components/ui/reveal-animation";
 import { ChevronDown } from "lucide-react";
@@ -18,21 +17,25 @@ export function Hero() {
       <div className="relative max-w-7xl mx-auto py-20 z-10">
         <div className="flex flex-col items-center text-center space-y-8">
           <RevealAnimation type="slideUp" delay={100}>
-            <span className="inline-block py-1 px-3 rounded-full text-xs font-medium tracking-wider bg-primary/10 text-primary mb-4">
+            <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-4 text-primary">
+              Daniel Cruz McCoy
+            </h1>
+            <span className="inline-block py-1 px-3 rounded-full text-xs font-medium tracking-wider bg-primary/10 text-primary">
               MECHANICAL ENGINEER
             </span>
           </RevealAnimation>
           
           <RevealAnimation type="slideUp" delay={300}>
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight max-w-4xl">
+            <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold tracking-tight max-w-4xl">
               Engineering precision with <span className="text-primary">innovative</span> solutions
-            </h1>
+            </h2>
           </RevealAnimation>
           
           <RevealAnimation type="slideUp" delay={500}>
             <p className="text-muted-foreground max-w-2xl text-lg">
-              Specialized in mechanical design and engineering solutions that combine 
-              cutting-edge technology with practical implementation for real-world problems.
+              Developing next-generation Direct Air Capture (DAC) technology at Aircapture, 
+              focusing on innovative mechanical systems and experimental research to advance 
+              carbon removal solutions.
             </p>
           </RevealAnimation>
           

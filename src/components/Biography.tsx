@@ -1,18 +1,16 @@
-
 import { RevealAnimation } from "./ui/reveal-animation";
 import { GlassCard } from "./ui/glass-card";
 import { Badge } from "@/components/ui/badge";
 
 // These arrays will be used to display skills
 const technicalSkills = [
-  "CAD Design", "Mechanical Analysis", "Prototyping", 
-  "3D Printing", "CNC Machining", "FEA", 
-  "Material Selection", "Precision Engineering"
+  "CAD Design", "3D Design", "Manufacturing", 
+  "Prototyping", "Automation", "Design for Assembly", 
+  "Plumbing", "Experimental Research"
 ];
 
 const softwareSkills = [
-  "SolidWorks", "AutoCAD", "MATLAB", 
-  "ANSYS", "Fusion 360", "LabVIEW"
+  "SOLIDWORKS", "MATLAB", "Microsoft Excel"
 ];
 
 export function Biography() {
@@ -29,8 +27,8 @@ export function Biography() {
             <GlassCard className="p-3 relative">
               <div className="rounded-lg overflow-hidden aspect-square relative img-hover-zoom">
                 <img 
-                  src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?auto=format&fit=crop&w=800&q=80" 
-                  alt="Mechanical Engineer Portrait" 
+                  src="https://media.licdn.com/dms/image/v2/D4E03AQE6JJwSyCVopg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1721774987315?e=1747872000&v=beta&t=o2YpNIdKmm8gpulL1alKblbLbXSGz7T4-xUkRb4vVko" 
+                  alt="Danny McCoy - Mechanical Engineering Student" 
                   className="w-full h-full object-cover rounded-lg transform hover:scale-105 transition-transform duration-700"
                 />
                 
@@ -46,19 +44,20 @@ export function Biography() {
             <RevealAnimation type="slideInFromRight" delay={200}>
               <span className="text-sm font-medium text-primary tracking-wider">ABOUT ME</span>
               <h2 className="text-3xl md:text-4xl font-bold mt-2 mb-6">
-                Mechanical Engineer with a passion for innovative solutions
+                Mechanical Engineering Student at Vanderbilt University
               </h2>
               
               <div className="space-y-4 text-muted-foreground">
                 <p>
-                  With over 8 years of experience in mechanical engineering, I specialize in creating 
-                  efficient, sustainable, and innovative mechanical systems that address complex challenges 
-                  across various industries.
+                  As a mechanical engineering student, I've been inspired by the power and ingenuity of technology 
+                  to develop solutions for the future. Through this admiration and curiosity, I've developed skills 
+                  in 3D design, manufacturing, and automation to create impactful innovation in this field.
                 </p>
                 <p>
-                  My approach combines precise technical knowledge with creative problem-solving, allowing 
-                  me to develop solutions that are both practical and forward-thinking. I'm particularly 
-                  interested in sustainable design, automation systems, and precision engineering.
+                  Currently, I'm working as a Mechanical Engineer intern at Aircapture, where I'm involved in 
+                  Direct Air Capture (DAC) technology development and manufacturing. My experience includes 
+                  leading automation projects at 1Micro, where I significantly improved production efficiency, 
+                  and running a successful landscaping business that served over 120 customers.
                 </p>
               </div>
               

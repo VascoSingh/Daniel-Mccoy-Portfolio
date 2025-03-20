@@ -1,4 +1,3 @@
-
 import { createContext, ReactNode, useContext, useState } from "react";
 
 export type Project = {
@@ -11,6 +10,9 @@ export type Project = {
   technologies: string[];
   date: string;
   clientName?: string;
+  solution?: string;
+  outcome?: string;
+  imageDescriptions?: string[];
 };
 
 // Sample project data
@@ -36,57 +38,55 @@ const initialProjects: Project[] = [
   },
   {
     id: "2",
-    title: "Automated Manufacturing System",
-    shortDescription: "Designed and implemented an automated manufacturing system for precision components.",
-    description: "Led the development of a fully automated manufacturing system that increased production efficiency by 45%. The system incorporated advanced robotics, computer vision, and machine learning algorithms to identify and correct manufacturing defects in real-time.",
-    coverImage: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=800&q=80",
+    title: "R&D Pipe Flow Experiment",
+    shortDescription: "Developed a pipe flow experiment to explore laminar flow in a subsection of a DAC unit.",
+    description: "Led the development of a pipe flow experiment that increased understanding of laminar flow characteristics in Direct Air Capture (DAC) units. The system incorporated advanced measurement techniques and precise flow control to ensure accurate data collection and analysis.",
+    coverImage: "https://pub.mdpi-res.com/fluids/fluids-09-00098/article_deploy/html/images/fluids-09-00098-g001.png?1713667677",
     images: [
-      "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1531297484001-80022131f5a1?auto=format&fit=crop&w=800&q=80"
+      "https://i.imgur.com/1d6dPK7.png",
+      "https://i.imgur.com/aMSovts.jpeg",
+      "https://i.imgur.com/S71O6q2.jpeg",
+      "https://i.imgur.com/qBNwX44.jpeg",
+      "https://i.imgur.com/ymQ9ZJD.jpeg"
     ],
-    technologies: ["CAD Design", "Robotics", "PLC Programming", "Machine Vision"],
-    date: "2023",
-    clientName: "TechManufacturing Inc."
+    imageDescriptions: [
+      "P&ID: This shows the piping and instrumentation diagram of the experimental setup with the faucet cartridge installed.",
+      "Version 1: Here is the first version of the experiment (w/o faucet cartridge). From this experiment, I determined that the system was not achieving laminar flow.",
+      "Version 2: Here is the second version of the experiment (w/ faucet cartridge). From this experiment, I verified that incremental flow would allow for laminar flow.",
+      "Rear of Experiment: This shows the actuated valve, relief valve, pressure indicator, and vacuum valve and vacuum pump attachment.",
+      "Front of Experiment: This shows the steam reservoir, the pressure indicator, the faucet cartridge valve, and the pneumatic valve."
+    ],
+    technologies: ["Experimental Research", "Data Analysis", "Plumbing", "Thermodynamics", "Fluid Mechanics"],
+    date: "2024",
+    clientName: "Aircapture",
+    solution: "To achieve the experiment, I designed a controlled setup using pneumatic and actuated valves to precisely regulate the timing of the fluid flow. Steam was generated from a water reservoir equipped with a pressure indicator, allowing me to monitor the transition from water to steam by carefully heating the system. A copper pipe, designed to mimic the DAC unit's piping, was fitted with four thermocouples to record temperature changes over time, enabling the analysis of the temperature gradient and confirmation of laminar flow conditions. A vacuum pump established the necessary initial vacuum conditions, while a relief valve was incorporated to ensure system safety throughout the experiment.",
+    outcome: "The experiment revealed that the system was not achieving laminar flow as initially intended. Analysis of the temperature gradient and flow conditions indicated inconsistencies that suggested turbulent behavior. To address this, I determined that incorporating a control valve to regulate the flow rate into the pipe would be necessary. This solution took the form of a faucet cartridge, allowing for incremental adjustments to the steam flow rate. By implementing this modification, the system could be fine-tuned to better control fluid dynamics, increasing the likelihood of achieving stable laminar flow."
   },
   {
     id: "3",
-    title: "Sustainable Energy Conversion System",
-    shortDescription: "Developed a high-efficiency energy conversion system for sustainable power generation.",
-    description: "Engineered an innovative energy conversion system that captures and converts waste heat into usable electricity. The system achieves 38% efficiency, significantly higher than industry standards, and has been implemented in three manufacturing facilities.",
-    coverImage: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80",
+    title: "Faucet Cartridge 3D Modeling",
+    shortDescription: "Modeled a standard faucet cartridge to integrate into larger assemblies and machine compatible components out of new materials",
+    description: "Created detailed 3D models of faucet cartridges using SOLIDWORKS, enabling seamless integration with larger assemblies and facilitating the manufacturing of compatible components using alternative materials. The project focused on precision modeling and material optimization.",
+    coverImage: "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?auto=format&fit=crop&w=800&q=80",
     images: [
-      "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=800&q=80"
+      "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?auto=format&fit=crop&w=800&q=80"
     ],
-    technologies: ["Thermodynamics", "Finite Element Analysis", "SOLIDWORKS", "Energy Modeling"],
-    date: "2022"
+    technologies: ["SOLIDWORKS", "CNC Machining", "Material Science"],
+    date: "2024",
+    clientName: "Aircapture"
   },
   {
     id: "4",
-    title: "Advanced Prosthetic Limb",
-    shortDescription: "Created a lightweight, durable prosthetic limb with enhanced mobility and comfort.",
-    description: "Designed and prototyped a next-generation prosthetic limb using composite materials and additive manufacturing techniques. The design reduced weight by 30% while increasing strength and durability, and incorporated advanced sensors for improved user control and feedback.",
-    coverImage: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=800&q=80",
+    title: "Automated Manufacturing System",
+    shortDescription: "Designed and implemented an automated manufacturing system for precision components.",
+    description: "Developed and implemented a state-of-the-art automated manufacturing system that significantly improved production efficiency and quality control. The system integrated advanced robotics and control systems to ensure precise component manufacturing.",
+    coverImage: "https://images.unsplash.com/photo-1565043589221-1a6fd9ae45c7?auto=format&fit=crop&w=800&q=80",
     images: [
-      "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800&q=80"
+      "https://images.unsplash.com/photo-1565043589221-1a6fd9ae45c7?auto=format&fit=crop&w=800&q=80"
     ],
-    technologies: ["Biomechanics", "3D Printing", "Material Science", "Human-Centered Design"],
-    date: "2022-2023"
-  },
-  {
-    id: "5",
-    title: "Automated HVAC Optimization System",
-    shortDescription: "Developed an intelligent HVAC system that reduces energy consumption by 32%.",
-    description: "Created an AI-driven HVAC optimization system that continuously monitors environmental conditions and adjusts settings to maximize comfort while minimizing energy usage. The system has been implemented in commercial buildings, resulting in significant cost savings and reduced carbon footprint.",
-    coverImage: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800&q=80",
-    images: [
-      "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1531297484001-80022131f5a1?auto=format&fit=crop&w=800&q=80"
-    ],
-    technologies: ["Thermal Dynamics", "IoT Sensors", "Control Systems", "Machine Learning"],
-    date: "2021"
+    technologies: ["Robotics", "Control Systems", "Programming"],
+    date: "2023",
+    clientName: "1Micro"
   }
 ];
 

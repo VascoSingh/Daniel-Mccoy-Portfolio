@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -10,19 +9,19 @@ const contactInfo = [
   {
     icon: <Phone size={20} />,
     title: "Phone",
-    details: "+1 (555) 123-4567",
-    link: "tel:+15551234567"
+    details: "(952) 693-5739",
+    link: "tel:+19526935739"
   },
   {
     icon: <Mail size={20} />,
     title: "Email",
-    details: "contact@example.com",
-    link: "mailto:contact@example.com"
+    details: "daniel.c.mccoy@vanderbilt.edu",
+    link: "mailto:daniel.c.mccoy@vanderbilt.edu"
   },
   {
     icon: <MapPin size={20} />,
-    title: "Office",
-    details: "123 Innovation Street, Tech City, CA 94043",
+    title: "Location",
+    details: "Nashville, Tennessee, United States",
     link: "https://maps.google.com"
   }
 ];
@@ -40,7 +39,7 @@ export function Contact() {
             <span className="text-sm font-medium text-primary tracking-wider">GET IN TOUCH</span>
             <h2 className="text-3xl md:text-5xl font-bold mt-2">Contact Me</h2>
             <p className="mt-4 text-muted-foreground max-w-2xl mx-auto">
-              Interested in working together or have questions about my services?
+              Interested in discussing engineering opportunities or collaborations?
               Feel free to reach out, and I'll get back to you as soon as possible.
             </p>
           </div>

@@ -1,69 +1,77 @@
-# Welcome to your Lovable project
+# Daniel McCoy's Engineering Portfolio
 
-## Project info
+A modern, responsive portfolio website showcasing mechanical engineering projects and expertise. Built with React, TypeScript, and Tailwind CSS.
 
-**URL**: https://lovable.dev/projects/1ee8c14f-9520-4cb5-896f-55a59d6fd49b
+## Features
 
-## How can I edit this code?
+- Modern, responsive design
+- Project showcase with detailed case studies
+- Interactive project gallery
+- Smooth animations and transitions
+- Dark mode support
+- Mobile-friendly navigation
 
-There are several ways of editing your application.
+## Technologies Used
 
-**Use Lovable**
+- React
+- TypeScript
+- Tailwind CSS
+- Vite
+- Shadcn/ui
+- React Router
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/1ee8c14f-9520-4cb5-896f-55a59d6fd49b) and start prompting.
+## Getting Started
 
-Changes made via Lovable will be committed automatically to this repo.
+### Prerequisites
 
-**Use your preferred IDE**
+- Node.js (v16 or higher)
+- npm or yarn
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### Installation
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+1. Clone the repository
+```bash
+git clone https://github.com/yourusername/mech-portfolio-nexus.git
+cd mech-portfolio-nexus
 ```
 
-**Edit a file directly in GitHub**
+2. Install dependencies
+```bash
+npm install
+# or
+yarn install
+```
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+3. Start the development server
+```bash
+npm run dev
+# or
+yarn dev
+```
 
-**Use GitHub Codespaces**
+4. Build for production
+```bash
+npm run build
+# or
+yarn build
+```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Project Structure
 
-## What technologies are used for this project?
+```
+src/
+  ├── components/     # React components
+  ├── context/       # React context providers
+  ├── lib/           # Utility functions
+  ├── pages/         # Page components
+  ├── styles/        # Global styles
+  └── App.tsx        # Root component
+```
 
-This project is built with .
+## Deployment
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+The site can be deployed to any static hosting service like Vercel, Netlify, or GitHub Pages.
 
-## How can I deploy this project?
+## License
 
-Simply open [Lovable](https://lovable.dev/projects/1ee8c14f-9520-4cb5-896f-55a59d6fd49b) and click on Share -> Publish.
-
-## I want to use a custom domain - is that possible?
-
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
+MIT License - feel free to use this code for your own portfolio!
