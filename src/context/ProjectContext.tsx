@@ -71,11 +71,12 @@ const initialProjects: Project[] = [
     images: [
       "https://i.imgur.com/ExeGlUM.jpeg",
       "https://i.imgur.com/7yH27wz.jpeg",
+      "https://www.youtube.com/shorts/eNkQlXEt6R8"
     ],
     imageDescriptions: [
       "Part Comparison: On the left are the two components that melted during testing. On the right are the new PEEK components that were manufactured based on my model.",
       "Melted Component: This is the plastic component that melted from high temperatures from testing. This connects the rotational component to the ceramic sealing, allowing the cartridge to act as a valve.",
-      "SOLIDWORKS model of faucet cartridge"
+      "SOLIDWORKS Model: Video demonstration of the 3D model showing the faucet cartridge's internal components and assembly."
     ],
     technologies: ["SOLIDWORKS", "CNC Machining", "Material Science"],
     date: "2024",
