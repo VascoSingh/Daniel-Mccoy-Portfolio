@@ -66,27 +66,44 @@ const initialProjects: Project[] = [
     id: "3",
     title: "Faucet Cartridge 3D Modeling",
     shortDescription: "Modeled a standard faucet cartridge to integrate into larger assemblies and machine compatible components out of new materials",
-    description: "Created detailed 3D models of faucet cartridges using SOLIDWORKS, enabling seamless integration with larger assemblies and facilitating the manufacturing of compatible components using alternative materials. The project focused on precision modeling and material optimization.",
-    coverImage: "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?auto=format&fit=crop&w=800&q=80",
+    description: "The primary challenge of this project was reverse engineering a faucet cartridge from the ground up. This required precise measurements and detailed modeling to accurately recreate its function within a full assembly.",
+    coverImage: "https://images.ctfassets.net/q2hzfkp3j57e/6CIAwMrzUsQkeeCqEUoScG/65edd550b5784984ec573836a4e4116f/cnc-milling-1.webp?w=1600&h=1200&fm=jpg&q=82",
     images: [
-      "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?auto=format&fit=crop&w=800&q=80"
+      "https://i.imgur.com/ExeGlUM.jpeg",
+      "https://i.imgur.com/7yH27wz.jpeg",
+    ],
+    imageDescriptions: [
+      "Part Comparison: On the left are the two components that melted during testing. On the right are the new PEEK components that were manufactured based on my model.",
+      "Melted Component: This is the plastic component that melted from high temperatures from testing. This connects the rotational component to the ceramic sealing, allowing the cartridge to act as a valve.",
+      "SOLIDWORKS model of faucet cartridge"
     ],
     technologies: ["SOLIDWORKS", "CNC Machining", "Material Science"],
     date: "2024",
-    clientName: "Aircapture"
+    clientName: "Aircapture",
+    solution: "Using SOLIDWORKS, I meticulously designed a 3D model that replicated the original component's dimensions and functionality. This allowed for material modifications for each component, letting the company tailor it to their needs. Additionally, I made intentional design modifications to minimize manufacturing time and cost.",
+    outcome: "Using my 3D model, inner components of the faucet cartridge that failed due to high temperatures in steam flow could be manufactured from PEEK to withstand these new high temperatures while keeping the rest of the faucet cartridge completely stock. This not only made a faucet cartridge a viable solution for steam flow but also reduced the cost of manufacturing for the company."
   },
   {
     id: "4",
     title: "Automated Manufacturing System",
     shortDescription: "Designed and implemented an automated manufacturing system for precision components.",
-    description: "Developed and implemented a state-of-the-art automated manufacturing system that significantly improved production efficiency and quality control. The system integrated advanced robotics and control systems to ensure precise component manufacturing.",
-    coverImage: "https://images.unsplash.com/photo-1565043589221-1a6fd9ae45c7?auto=format&fit=crop&w=800&q=80",
+    description: "Developed and implemented a state-of-the-art automated manufacturing system that significantly improved production efficiency and quality control. The system integrated advanced robotics and control systems to ensure precise component manufacturing. The manufacturing requirements were to assembly, align, glue, and program each key tag for immediate use.",
+    coverImage: "https://img.machinedesign.com/files/base/ebm/machinedesign/image/2023/11/6568d0487c14aa001f741983-jpg_version_211_2023_ur30_machinetending_image_03.png?auto=format,compress&fit=crop&q=45&h=356&height=356&w=640&width=640",
     images: [
-      "https://images.unsplash.com/photo-1565043589221-1a6fd9ae45c7?auto=format&fit=crop&w=800&q=80"
+      "https://i.imgur.com/Fo6as58.png",
+      "https://i.imgur.com/riYfaHF.jpeg",
+      "https://www.youtube.com/shorts/J9xxNIeHv9Y"
     ],
-    technologies: ["Robotics", "Control Systems", "Programming"],
+    imageDescriptions: [
+      "Key Tag Example: A fully assembled key tag showing the final product that the automated system produces.",
+      "Alignment Precision: This demonstrates the critical alignment requirements. The chip must be perfectly positioned within the key tag chassis for programming and functionality. The manufacturing process must prevent chip misalignment during glue setting.",
+      "Manufacturing Process: Video demonstration of the automated key tag assembly and programming process."
+    ],
+    technologies: ["Robotics", "Control Systems", "Programming", "Process Optimization", "Automation"],
     date: "2023",
-    clientName: "1Micro"
+    clientName: "1Micro",
+    solution: "The task required diagnosing performance issues, refining robotic programming, and implementing optimizations to improve consistency and throughput.",
+    outcome: "The project transformed from an unreliable system into a high-performing automated process capable of increasing daily production capacity by 1.5x."
   }
 ];
 

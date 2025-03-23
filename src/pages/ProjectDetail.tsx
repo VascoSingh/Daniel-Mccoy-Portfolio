@@ -48,9 +48,13 @@ export default function ProjectDetail() {
         {/* Project details */}
         <section className="py-16 px-6 md:px-12">
           <div className="max-w-7xl mx-auto">
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
-              <ProjectOverview project={project} projectId={id || ""} />
-              <ProjectGallery project={project} imageDescriptions={imageDescriptions} />
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
+              <div className="lg:col-span-5">
+                <ProjectOverview project={project} projectId={id || ""} />
+              </div>
+              <div className="lg:col-span-7">
+                <ProjectGallery project={project} imageDescriptions={imageDescriptions} />
+              </div>
             </div>
           </div>
         </section>

@@ -1,6 +1,3 @@
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
 import { GlassCard } from "./ui/glass-card";
 import { RevealAnimation } from "./ui/reveal-animation";
 import { Mail, MapPin, Phone } from "lucide-react";
@@ -45,9 +42,8 @@ export function Contact() {
           </div>
         </RevealAnimation>
         
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-          {/* Contact Information */}
-          <RevealAnimation type="slideInFromLeft" delay={200}>
+        <RevealAnimation type="fadeIn" delay={200}>
+          <GlassCard className="max-w-2xl mx-auto p-8">
             <div className="space-y-8">
               <h3 className="text-2xl font-semibold">Let's connect</h3>
               <p className="text-muted-foreground">
@@ -55,82 +51,26 @@ export function Contact() {
                 I'm available for freelance work, consulting, and full-time opportunities.
               </p>
               
-              <div className="space-y-4 mt-8">
+              <div className="space-y-6 mt-8">
                 {contactInfo.map((item, index) => (
                   <a 
                     key={index}
                     href={item.link}
-                    className="flex items-start space-x-4 p-4 rounded-lg hover:bg-secondary/50 transition-colors duration-300"
+                    className="flex items-center space-x-4 p-4 rounded-lg hover:bg-secondary/50 transition-colors duration-300"
                   >
                     <div className="bg-primary/10 p-3 rounded-full text-primary">
                       {item.icon}
                     </div>
                     <div>
                       <h4 className="font-medium">{item.title}</h4>
-                      <p className="text-muted-foreground text-sm">{item.details}</p>
+                      <p className="text-muted-foreground">{item.details}</p>
                     </div>
                   </a>
                 ))}
               </div>
             </div>
-          </RevealAnimation>
-          
-          {/* Contact Form */}
-          <RevealAnimation type="slideInFromRight" delay={400}>
-            <GlassCard className="p-6 lg:p-8">
-              <form className="space-y-6">
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                  <div className="space-y-2">
-                    <label htmlFor="name" className="text-sm font-medium">
-                      Name
-                    </label>
-                    <Input 
-                      id="name" 
-                      placeholder="Your name" 
-                      className="bg-white/5 border-white/10 focus:border-primary"
-                    />
-                  </div>
-                  <div className="space-y-2">
-                    <label htmlFor="email" className="text-sm font-medium">
-                      Email
-                    </label>
-                    <Input 
-                      id="email" 
-                      type="email" 
-                      placeholder="Your email" 
-                      className="bg-white/5 border-white/10 focus:border-primary"
-                    />
-                  </div>
-                </div>
-                
-                <div className="space-y-2">
-                  <label htmlFor="subject" className="text-sm font-medium">
-                    Subject
-                  </label>
-                  <Input 
-                    id="subject" 
-                    placeholder="What is this regarding?" 
-                    className="bg-white/5 border-white/10 focus:border-primary"
-                  />
-                </div>
-                
-                <div className="space-y-2">
-                  <label htmlFor="message" className="text-sm font-medium">
-                    Message
-                  </label>
-                  <Textarea 
-                    id="message" 
-                    placeholder="Your message" 
-                    rows={5} 
-                    className="bg-white/5 border-white/10 focus:border-primary"
-                  />
-                </div>
-                
-                <Button type="submit" className="w-full">Send Message</Button>
-              </form>
-            </GlassCard>
-          </RevealAnimation>
-        </div>
+          </GlassCard>
+        </RevealAnimation>
       </div>
     </section>
   );

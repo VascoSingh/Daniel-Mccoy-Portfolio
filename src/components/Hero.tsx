@@ -1,8 +1,15 @@
 import { Button } from "@/components/ui/button";
 import { RevealAnimation } from "@/components/ui/reveal-animation";
-import { ChevronDown } from "lucide-react";
+import { ChevronDown, Linkedin } from "lucide-react";
 
 export function Hero() {
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section className="min-h-screen relative flex items-center justify-center px-6 py-24 overflow-hidden">
       {/* Background gradient */}
@@ -17,12 +24,29 @@ export function Hero() {
       <div className="relative max-w-7xl mx-auto py-20 z-10">
         <div className="flex flex-col items-center text-center space-y-8">
           <RevealAnimation type="slideUp" delay={100}>
-            <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-4 text-primary">
-              Daniel Cruz McCoy
-            </h1>
-            <span className="inline-block py-1 px-3 rounded-full text-xs font-medium tracking-wider bg-primary/10 text-primary">
-              MECHANICAL ENGINEER
-            </span>
+            <div className="flex flex-col items-center">
+              <a 
+                href="https://www.linkedin.com/in/danny-mccoy-5118b82a9/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-4xl md:text-6xl font-bold tracking-tight mb-4 text-primary hover:text-primary/80 transition-colors"
+              >
+                Daniel Cruz McCoy
+              </a>
+              <div className="flex flex-col items-center gap-2">
+                <a 
+                  href="https://www.linkedin.com/in/danny-mccoy-5118b82a9/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-primary hover:text-primary/80 transition-colors"
+                >
+                  <Linkedin size={20} />
+                </a>
+                <span className="inline-block py-1 px-3 rounded-full text-xs font-medium tracking-wider bg-primary/10 text-primary">
+                  MECHANICAL ENGINEER
+                </span>
+              </div>
+            </div>
           </RevealAnimation>
           
           <RevealAnimation type="slideUp" delay={300}>
@@ -41,10 +65,19 @@ export function Hero() {
           
           <RevealAnimation type="slideUp" delay={700}>
             <div className="flex flex-col sm:flex-row gap-4 mt-4">
-              <Button size="lg" className="px-8">
+              <Button 
+                size="lg" 
+                className="px-8"
+                onClick={() => scrollToSection('projects')}
+              >
                 View My Work
               </Button>
-              <Button size="lg" variant="outline" className="px-8">
+              <Button 
+                size="lg" 
+                variant="outline" 
+                className="px-8"
+                onClick={() => scrollToSection('contact')}
+              >
                 Contact Me
               </Button>
             </div>

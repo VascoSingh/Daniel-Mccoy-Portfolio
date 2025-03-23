@@ -1,5 +1,4 @@
-
-import { Linkedin, Github, Twitter, ArrowUp } from "lucide-react";
+import { Linkedin, ArrowUp } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export function Footer() {
@@ -24,25 +23,13 @@ export function Footer() {
           {/* Social links */}
           <div className="flex space-x-4 mb-6 md:mb-0">
             <a 
-              href="#" 
+              href="https://www.linkedin.com/in/danny-mccoy-5118b82a9/" 
+              target="_blank"
+              rel="noopener noreferrer"
               className="p-2 rounded-full bg-white/5 hover:bg-white/10 transition-colors"
               aria-label="LinkedIn"
             >
               <Linkedin size={18} />
-            </a>
-            <a 
-              href="#" 
-              className="p-2 rounded-full bg-white/5 hover:bg-white/10 transition-colors"
-              aria-label="GitHub"
-            >
-              <Github size={18} />
-            </a>
-            <a 
-              href="#" 
-              className="p-2 rounded-full bg-white/5 hover:bg-white/10 transition-colors"
-              aria-label="Twitter"
-            >
-              <Twitter size={18} />
             </a>
           </div>
           

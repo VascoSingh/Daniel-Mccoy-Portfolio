@@ -33,6 +33,10 @@ export function ProjectOverview({ project, projectId }: ProjectOverviewProps) {
             <p className="text-muted-foreground">
               The challenge lay in accurately replicating a subsection of the system's fluid dynamics under controlled conditions. Using dimensional analysis and known starting parameters, such as steam pressure and a system under vacuum, I developed a completely new experimental setup to mimic the targeted fluid flow. Ensuring fidelity to real-world conditions while maintaining precise control over experimental variables required innovative problem-solving and careful calibration.
             </p>
+          ) : projectId === "4" ? (
+            <p className="text-muted-foreground">
+              The challenge of this project was to enhance the precision and reliability of 1Micro's robotic manufacturing system. When I began, the robotic arms operated inconsistently, leading to inefficiencies in production.
+            </p>
           ) : (
             <p className="text-muted-foreground">
               The project presented several complex engineering challenges, including optimization for 
@@ -46,7 +50,7 @@ export function ProjectOverview({ project, projectId }: ProjectOverviewProps) {
             <p className="text-muted-foreground">
               Using advanced CAD modeling and rapid prototyping, my team developed an pull cart design that minimizes fatigue, improves mobility, and overall enhances functionality in rugged terrains.
             </p>
-          ) : projectId === "2" && project.solution ? (
+          ) : (project.solution ? (
             <p className="text-muted-foreground">
               {project.solution}
             </p>
@@ -56,24 +60,23 @@ export function ProjectOverview({ project, projectId }: ProjectOverviewProps) {
               incorporated composite materials and topology optimization. The result was a lightweight yet 
               robust solution that exceeded performance requirements.
             </p>
-          )}
+          ))}
           
           <h3 className="text-xl font-semibold">The Outcome</h3>
           {projectId === "1" ? (
             <p className="text-muted-foreground">
               The final design allows for the full weapon system (gun & ammo) to be transported by only 2 soldiers, entirely removing extra strain on other soldiers as well as consolidating the weapon system to one location. Additionally, the design has a load capacity of 400 lbs and is collapsable for easy transport without loads.
             </p>
-          ) : projectId === "2" && project.outcome ? (
+          ) : (project.outcome ? (
             <p className="text-muted-foreground">
               {project.outcome}
             </p>
           ) : (
             <p className="text-muted-foreground">
-              The final design achieved a 30% weight reduction while increasing structural integrity by 15%. 
-              Production costs were reduced by 22% through material optimization and streamlined manufacturing 
-              processes.
+              The final design achieved significant improvements in performance and efficiency through 
+              careful optimization and innovative engineering solutions.
             </p>
-          )}
+          ))}
         </div>
       </div>
     </RevealAnimation>

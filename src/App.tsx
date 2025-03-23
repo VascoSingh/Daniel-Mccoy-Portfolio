@@ -14,19 +14,19 @@ const queryClient = new QueryClient();
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
-      <ProjectProvider>
+    <ProjectProvider>
         <Toaster />
         <Sonner />
         <BrowserRouter>
-          <Routes>
-            <Route path="/" element={<Index />} />
-            <Route path="/project/:id" element={<ProjectDetail />} />
+        <Routes>
+          <Route path="/" element={<Index />} />
+          <Route path="/project/:id" element={<ProjectDetail />} />
             <Route path="*" element={<NotFound />} />
-          </Routes>
+        </Routes>
         </BrowserRouter>
-      </ProjectProvider>
+    </ProjectProvider>
     </TooltipProvider>
   </QueryClientProvider>
-);
+  );
 
 export default App;
