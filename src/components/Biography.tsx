@@ -27,7 +27,7 @@ export function Biography() {
             <GlassCard className="p-3 relative">
               <div className="rounded-lg overflow-hidden aspect-square relative img-hover-zoom">
                 <img 
-                  src="https://media.licdn.com/dms/image/v2/D4E03AQE6JJwSyCVopg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1721774987315?e=1747872000&v=beta&t=o2YpNIdKmm8gpulL1alKblbLbXSGz7T4-xUkRb4vVko" 
+                  src="https://media.licdn.com/dms/image/v2/D4E03AQE-wvNE2CnJTA/profile-displayphoto-shrink_400_400/B4EZXy8j4zGgAg-/0/1743537717121?e=1749686400&v=beta&t=iS0Xcv0R5kgYSlxstTQ-Vo6v6OGPeKGrzZMm9cLJiqk" 
                   alt="Danny McCoy - Mechanical Engineering Student" 
                   className="w-full h-full object-cover rounded-lg transform hover:scale-105 transition-transform duration-700"
                 />
